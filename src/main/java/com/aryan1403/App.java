@@ -1,11 +1,13 @@
 package com.aryan1403;
 
 import java.util.Scanner;
+
+import com.aryan1403.GUI.GUI;
 import com.aryan1403.Manage.Student;
 import com.aryan1403.Manage.studentDAO;
 
 public final class App {
-    public static void main(String[] args) {
+    public static void menuDrivenProgram() {
         System.out.println("Welcome to Student Management App");
         Scanner sc = new Scanner(System.in);
         Scanner sc1 = new Scanner(System.in);
@@ -68,6 +70,11 @@ public final class App {
                     break;
             }
         }
+    }
+    public static void main(String[] args) {
+        // menuDrivenProgram(); Command line Implementation
+        // GUI Implementaion
+        new GUI();
     }
 
 }
