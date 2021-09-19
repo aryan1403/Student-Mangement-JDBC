@@ -1,5 +1,6 @@
 package com.aryan1403.Manage;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +10,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
+@AllArgsConstructor
 public class Student {
     private int studentId;
     private String studentName;
