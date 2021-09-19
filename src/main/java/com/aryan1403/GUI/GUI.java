@@ -11,9 +11,11 @@ public class GUI {
     public GUI() {
         JTabbedPane pane = new JTabbedPane();
         pane.setBounds(10, 10, 790, 690);
+        pane.add("Data", new DataPane());
         pane.add("Insert Data", new InsertPane());
         pane.setLayout(null);
 
+        frame = new JFrame();
         frame.setSize(frameX, frameY);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(3);
